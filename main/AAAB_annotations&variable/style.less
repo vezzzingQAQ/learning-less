@@ -1,0 +1,48 @@
+//这个注释不会在CSS中保留
+/*这个注释在CSS中会保留*/
+
+@pinkColor:rgb(255, 181, 193);
+@greenColor:rgb(160, 212, 165);
+
+@m:margin;
+
+@selector:.warp;
+
+//变量是块作用域的，一个{}是一个作用域，等作用域中的所有变量读取完毕后再赋值【延迟加载】
+//嵌套规则
+*{
+    @{m}: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+@{selector}{//别忘了{}
+    position: relative;
+    display: block;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 100px auto;
+    .inner{
+        position: absolute;
+        display: block;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: @pinkColor;
+        border-radius: 10px;
+        color: rgb(0, 0, 0);
+        width: 100px;
+        height: 100px;
+        transition: 0.5s ease-in-out;
+        line-height: 100px;
+        text-align: center;
+        &:hover{//&代表 .inner
+            background-color: @greenColor;
+        }
+    }
+}
