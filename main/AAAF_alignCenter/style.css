@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.wrap {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  margin: calc(50vh - 150px) auto;
+}
+.wrap .inner {
+  padding: 5px;
+  color: white;
+}
+.wrap .inner:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50px;
+  height: 200px;
+  background-color: rgba(255, 182, 193, 0.411);
+}
+.wrap .inner:nth-child(2) {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 200px;
+  height: 50px;
+  background-color: rgba(173, 216, 230, 0.404);
+}
