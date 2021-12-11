@@ -3,46 +3,62 @@
     "projectName":"learning-less",
     "author":"vezzzing",
     "startDate":"2021.12.5",
-    "displayLessonIndex":0,
+    "displayLessonIndex":3,
+    "codeShow":{
+        "paths":[
+            {
+                "pathName":"main.html",
+                "class":"html"
+            },
+            {
+                "pathName":"style.less",
+                "class":"less"
+            },
+            {
+                "pathName":"style.css",
+                "class":"css"
+            }
+        ]
+    },
     "lessonList":[
         {
             "identifier":"AAAA",
-            "path":"lessHW/main",
+            "path":"lessHW",
             "name":"less hello world",
             "date":"2021.12.5",
             "ips":8
         },
         {
             "identifier":"AAAB",
-            "path":"annotations&variable/main",
+            "path":"annotations&variable",
             "name":"变量和注释",
             "date":"2021.12.5",
             "ips":4
         },
         {
             "identifier":"AAAC",
-            "path":"mixIn/main",
+            "path":"mixIn",
             "name":"混合",
             "date":"2021.12.5",
             "ips":1
         },
         {
             "identifier":"AAAD",
-            "path":"lessLink&matchingPattern/main",
+            "path":"lessLink&matchingPattern",
             "name":"引入和匹配模式",
             "date":"2021.12.5",
             "ips":1
         },
         {
             "identifier":"AAAE",
-            "path":"calculation/main",
+            "path":"calculation",
             "name":"less计算",
             "date":"2021.12.7",
             "ips":1
         },
         {
             "identifier":"AAAF",
-            "path":"alignCenter/main",
+            "path":"alignCenter",
             "name":"引入文件居中",
             "date":"2021.12.7",
             "ips":1
